@@ -1,0 +1,10 @@
+angular5_course:
+  container_name: ng5_project_admin
+  image: teracy/angular-cli:1.5.0
+  volumes:
+     - ./:/app/
+  entrypoint: tail -F -n0 /etc/hosts
+  ports:
+    - 4200:4200
+    - 9876:9876
+  working_dir: /app
